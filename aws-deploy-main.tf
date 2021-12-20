@@ -164,4 +164,7 @@ resource "aws_instance" "web" {
       "sudo service nginx start",
     ]
   }
+  *_block_device {
+    encrypted = true
+  }
 }
