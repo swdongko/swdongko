@@ -164,4 +164,5 @@ resource "aws_instance" "web" {
       "sudo service nginx start",
     ]
   }
+  ebs_optimized = true
 }
